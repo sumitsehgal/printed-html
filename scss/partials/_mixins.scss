@@ -1,0 +1,13 @@
+.cta {
+    background: #00aeef;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font: 16px/32px Arial, sans-serif;
+    padding: 0 25px;
+    vertical-align: top;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}

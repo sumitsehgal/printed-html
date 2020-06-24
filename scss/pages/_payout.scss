@@ -1,0 +1,100 @@
+.payout-wrap {
+    padding: 40px 30px;
+    @media (min-width: 768px) {
+        padding: 40px 50px;
+    }
+    .payout-box {
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+    }
+    .support-box {
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+    }
+    .setup-box {
+        padding: 16px 20px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        @media (min-width: 670px) {
+            display: flex;
+            align-items: center;
+        }
+        h3 {
+            font: 600 18px Arial, sans-serif;
+            color: #fff;
+            margin: 0px;
+            a {
+                text-decoration: none;
+                color: #00aeef;
+                i {
+                    font-size: 26px;
+                    margin-right: 15px;
+                    color: #00aeef;
+                }
+            }
+        }
+    }
+    .box {
+        background: #333;
+        border-radius: 10px;
+        height: 100%;
+        padding: 20px;
+        h3 {
+            color: #fff;
+            font: 22px Arial, sans-serif;
+        }
+        h2 {
+            font: 600 42px Arial, sans-serif;
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            font: 18px Arial, sans-serif;
+            margin: 0px;
+            a {
+                text-decoration: none;
+                color: #00aeef;
+            }
+        }
+        .pos {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            i {
+                font-size: 26px;
+                margin-right: 15px;
+                color: #00aeef;
+            }
+            span {
+                font: 14px Arial, sans-serif;
+                color: #cecece;
+            }
+        }
+    }
+}
+
+.payouts {
+    margin: 30px 0;
+    padding: 25px;
+    min-height: 300px;
+    position: relative;
+    .placeholder {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h6 {
+            color: #fff;
+            font: 600 22px Arial, sans-serif;
+        }
+        p {
+            color: #fff;
+            font: 16px Arial, sans-serif;
+            margin: 0px;
+        }
+    }
+}

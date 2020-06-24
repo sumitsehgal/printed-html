@@ -1,0 +1,47 @@
+.row-profile {
+    .form-box {
+        .control-setting {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 50px 0;
+            .opt {
+                h3 {
+                    color: #ffffff;
+                    font: 16px Arial, sans-serif;
+                    @media (min-width: 480px) {
+                        font: 20px Arial, sans-serif;
+                    }
+                }
+                h4 {
+                    font: 18px Arial, sans-serif;
+                    color: #d1d3d4;
+                    margin: 0px;
+                    @media (min-width: 480px) {
+                        font: 22px Arial, sans-serif;
+                    }
+                }
+                p {
+                    font: 14px Arial, sans-serif;
+                    color: #d1d3d4;
+                    margin: 0px;
+                }
+                .switch {
+                    margin: 0 0 0 20px;
+                    @extend %switch;
+                    @media (min-width: 768px) {
+                        margin: 0 0 0 40px;
+                    }
+                }
+            }
+        }
+        hr {
+            &.bar {
+                width: calc(100% - 0px);
+                margin: 25px 0px;
+                @media (min-width: 768px) {
+                    margin: 50px 0px;
+                }
+            }
+        }
+    }
+}

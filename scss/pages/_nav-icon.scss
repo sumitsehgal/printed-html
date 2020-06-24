@@ -1,0 +1,61 @@
+$wide: 20px;
+$pos:8px;
+%bar {
+    background: #cecece;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: $wide;
+}
+
+.nav-icon {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $wide;
+    @media (min-width: 768px) {
+        display: none;
+    }
+    .text {
+        font: 700 16px/1 Lato;
+        right: 25px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+    span {
+        @extend %bar;
+        &:before,
+        &:after {
+            @extend %bar;
+        }
+        &:before {
+            top: -$pos;
+        }
+        &:after {
+            bottom: -$pos;
+        }
+    }
+    &.active {
+        span {
+            background-color: transparent;
+            &:before,
+            &:after {
+                top: 0;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: translateY(-8px) rotate(-45deg);
+                top: $pos;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+h2 {
+    font: 32px Arial, sans-serif;
+    margin-bottom: 10px;
+    &.wht {
+        color: #fff;
+    }
+}
+
+h3 {
+    font: 20px Arial, sans-serif;
+    margin-bottom: 10px;
+    strong {
+        font-weight: 600;
+    }
+    &.wht {
+        color: #fff;
+    }
+}
+
+h4 {
+    font: 14px Arial, sans-serif;
+    margin-bottom: 10px;
+    strong {
+        font-weight: 600;
+    }
+    &.wht {
+        color: #fff;
+    }
+}
+
+h5 {
+    font: 16px Arial, sans-serif;
+    strong {
+        font-weight: 600;
+    }
+    &.wht {
+        color: #fff;
+    }
+}
