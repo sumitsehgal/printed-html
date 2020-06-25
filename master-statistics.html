@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/owl.carousel.min.css">
     <link rel="stylesheet" href="style/css.css">
-    <title>Print Space pro - Chat Message</title>
+    <title>Print Space pro - Statistics</title>
 </head>
 
 <body>
@@ -17,10 +17,9 @@
         <div class="nav-main left">
             <a href="#" class="brand"><img src="images/logo.png" alt=""></a>
             <ul class="link">
-                <li><a href="#" class="icon"><i class="fas fa-camera"></i></a></li>
                 <li class="d-none d-md-block"><a href="#">Printed</a></li>
                 <li class="d-none d-md-block"><a href="#">Space</a></li>
-                <li class="more"><a href="#" class="icon"><i class="fas fa-plus"></i></a></li>
+                <li class="d-none d-md-block"><a href="#">Pro</a></li>
             </ul>
         </div>
         <div id="nav-icon" class="nav-icon"><span></span>
@@ -85,6 +84,7 @@
             <ul class="link">
                 <li><a href="#">Printed</a></li>
                 <li><a href="#">Space</a></li>
+                <li><a href="#">Pro</a></li>
             </ul>
             <div class="search-top">
                 <span class="icon"><i class="fas fa-search"></i></span>
@@ -92,57 +92,68 @@
             </div>
         </div>
     </header>
-    <section class="chat-message">
-        <div class="inner-main">
-            <div class="cm-box message-box">
-                <div class="head">
-                    <h2>Messenger</h2>
-                </div>
-                <div class="body">
-                    <div class="empty-inbox">
-                        <h3>Inbox Empty</h3>
-                        <p>Reach out and connect with<br> your community or Pros</p>
+    <section class="stats-wrap">
+        <div class="stats-box">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <h3>Rank</h3>
+                        <h2>5</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>1 vs 22</span></div>
                     </div>
                 </div>
-            </div>
-            <div class="cm-box chat-box">
-                <div class="head">
-                    <h2>New Conversation</h2>
-                    <span class="cta-blank"></span>
+                <div class="col">
+                    <div class="box">
+                        <h3>Printed</h3>
+                        <h2>1</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>1 vs past 7 days</span></div>
+                    </div>
                 </div>
-                <div class="body">
-                    <div class="search-chat">
-                        <span class="icon"><i class="fas fa-search"></i></span>
-                        <input type="text" placeholder="Search">
+                <div class="col">
+                    <div class="box">
+                        <h3>Spaces</h3>
+                        <h2>3</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>3 vs past 7 days</span></div>
                     </div>
-                    <ul class="chat-type">
-                        <li class="active"><a href="#">Joined</a></li>
-                        <li><a href="#">Partner</a></li>
-                    </ul>
-                    <div class="chatted-box">
-                        <div class="user"><span></span></div>
-                        <div class="typed">
-                            <h3>Pro 1</h3>
-                            <h5>@Pro1</h5>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <h3>Views</h3>
+                        <h2>222</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>55 vs past 7 days</span></div>
                     </div>
-                    <div class="chatted-box">
-                        <div class="user"><span></span></div>
-                        <div class="typed">
-                            <h3>Pro 2</h3>
-                            <h5>@Pro2</h5>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <h3>Downloaded</h3>
+                        <h2>222</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>55 vs past 7 days</span></div>
                     </div>
-                    <div class="chatted-box">
-                        <div class="user"><span></span></div>
-                        <div class="typed">
-                            <h3>Pro 3</h3>
-                            <h5>@Pro3</h5>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <h3>Embeded</h3>
+                        <h2>107</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>55 vs past 7 days</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <h3>Social</h3>
+                        <h2>22k</h2>
+                        <div class="pos"><i class="fas fa-arrow-up"></i><span>55 vs past 7 days</span></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="cool-stats">
+            <h6 class="placeholder">Cool Stats Visual</h6>
+        </div>
+        <style type="text/css">
+            .stats-wrap .box .pos i{
+                color: #00aeef;
+            }
+        </style>
     </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
