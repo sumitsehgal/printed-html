@@ -10,6 +10,7 @@ $(function() {
     toggleNavMobile();
     toggleControlPros();
     sliderEdit();
+    profileTab();
     $('#callnotibox').on('click', function() {
         $(this).toggleClass('open')
         $('#noti-box').toggle();
@@ -57,9 +58,30 @@ function sliderEdit() {
     });
 }
 
-
-
-
 $(".user-link").click(function() {
     $(".sub-nav").toggle();
 });
+
+$('#select-training .call').on('click', function(e) {
+    e.preventDefault();
+    let data = $(this).data('tag');
+    $('#select-training .call').removeClass('active');
+    $(this).addClass('active');
+    $('#select-train-here .train-box').removeClass('d-flex');
+    $('#select-train-here .train-box[data-tag="' + data + '"]').addClass('d-flex');
+    if ($(window).innerWidth() < 1025)
+        $('body').addClass('scrollfix');
+});
+
+
+function profileTab() {
+    $('#tab-profile li').on('click', function(e) {
+        e.preventDefault();
+        let data = $(this).data('tag');
+        console.log(data);
+        $('#tab-profile li').removeClass('active');
+        $(this).addClass('active');
+        $('.acc-sec').removeClass('d-flex').addClass('d-none');
+        $('.acc-sec[data-tag="' + data + '"]').addClass('d-flex').removeClass('d-none');
+    });
+}

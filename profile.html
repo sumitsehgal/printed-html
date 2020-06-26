@@ -57,10 +57,8 @@
                         <li>
                             <a href="#">Log out</a>
                         </li>
-
                     </ul>
                 </div>
-
             </div>
             <ul class="link">
                 <li>
@@ -97,16 +95,16 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="tab-profile">
-                        <ul>
-                            <li class="active"><a href="profile.html">Profile</a></li>
-                            <li><a href="social.html">Social</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="account-alerts.html">Alerts</a></li>
+                        <ul id="tab-profile">
+                            <li class="active" data-tag="profile"><a href="#">Profile</a></li>
+                            <li data-tag="social"><a href="#">Social</a></li>
+                            <li data-tag="security"><a href="#">Security</a></li>
+                            <li data-tag="alerts"><a href="#">Alerts</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="row">
+                <div class="col-lg-9" id="acc-tab">
+                    <div class="row acc-sec d-flex" data-tag="profile">
                         <div class="col-md-6">
                             <div class="form-box">
                                 <h3>Personal</h3>
@@ -168,7 +166,7 @@
                         <div class="col-md-6">
                             <div class="form-box h-100">
                                 <h3>Profile</h3>
-                                <div class="head">
+                                <div class="user-pic">
                                     <div class="user"><span></span></div>
                                     <div class="view-more text-center">
                                         <a href="#" class="cta">Upload</a>
@@ -181,34 +179,29 @@
                                 <div class="input-form">
                                     <label for="">Gender</label>
                                     <div class="inline-radio">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">male</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">Female</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                            <label class="form-check-label" for="inlineRadio3">Not Specified</label>
-                                        </div>
+                                        <label class="radio-input">Male
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-input">Female
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-input">Not Specified
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
                                     </div>
-
                                 </div>
                                 <div class="input-form">
                                     <label for="">Account Type</label>
-                                    <div class="photograpy"><input type="text" name="" id="" value="Photography"> <span class="value"><p>V</p></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
+                                    <div class="tagsin"><input type="text" name="" id="" value="Photography"> <span class="value"><i class="fas fa-chevron-down"></i></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
                                 </div>
                                 <div class="input-form">
-
-                                    <div class="photograpy"><input type="text" name="" id="" value="Photographer"> <span class="value"><p>V</p></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
+                                    <div class="tagsin"><input type="text" name="" id="" value="Photographer"> <span class="value"><i class="fas fa-chevron-down"></i></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
                                 </div>
-
-
                                 <div class="input-form">
                                     <label for="">Skills</label>
-
                                     <div class="skills-box">
                                         <input type="text" name="" id="" value="Photoshoot">
                                         <div class="opt right">
@@ -246,14 +239,12 @@
                                         <button class="cta">Add Skill</button>
                                     </div>
                                 </div>
-
                                 <div class="input-form">
                                     <label for="">Tools</label>
-                                    <div class="photograpy"><input type="text" name="" id="" value="Cameras"> <span class="value"><p>V</p></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
+                                    <div class="tagsin"><input type="text" name="" id="" value="Cameras"> <span class="value"><i class="fas fa-chevron-down"></i></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
                                 </div>
                                 <div class="input-form">
-
-                                    <div class="photograpy"><input type="text" name="" id="" value="Lenses"> <span class="value"><p>V</p></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
+                                    <div class="tagsin"><input type="text" name="" id="" value="Lenses"> <span class="value"><i class="fas fa-chevron-down"></i></span> <span class="plus-icon"><img src="images/plus-icon.png" alt="/"></span></div>
                                 </div>
                                 <div class="input-form">
                                     <div class="view-more text-center">
@@ -263,9 +254,159 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row acc-sec d-none" data-tag="social">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-box">
+                                <h3 class="mb-4">Social media</h3>
+                                <div class="input-form">
+                                    <label for="">Website</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="input-form">
+                                    <label for="">Pinterest</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="input-form">
+                                    <div class="multi-field">
+                                        <input type="password" name="" id="" value="Password"> <span class="link"><a href="#">Link</a></span></div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="">Twitter</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="input-form">
+                                    <div class="multi-field">
+                                        <input type="password" name="" id="" value="Password"> <span class="link"><a href="#">Link</a></span></div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="">Instagram</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="input-form">
+                                    <div class="multi-field">
+                                        <input type="password" name="" id="" value="Password"> <span class="link"><a href="#">Link</a></span></div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="">Facebook</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="input-form">
+                                    <div class="multi-field">
+                                        <input type="password" name="" id="" value="Password"> <span class="link"><a href="#">Link</a></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row acc-sec d-none" data-tag="security">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-box"></div>
+                        </div>
+                    </div>
+                    <div class="row acc-sec d-none" data-tag="alerts">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="form-box">
+                                <h3>Email notifications</h3>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h4>Toggle all notifications</h4>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <hr class="bar">
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Printed</h3>
+                                        <p>Using your content</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Space</h3>
+                                        <p>Created using your content</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Partner requests</h3>
+                                        <p>Another pro wants to partner you</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Featured by Printed Space</h3>
+                                        <p>Another pro joins you</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>New message</h3>
+                                        <p>Someone sends you a message</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Printed Space news</h3>
+                                        <p>The latest breaking trends and updates</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-setting">
+                                    <div class="opt left">
+                                        <h3>Account changes and updates</h3>
+                                        <p>Important information related to account changes and requests</p>
+                                    </div>
+                                    <div class="opt right">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
