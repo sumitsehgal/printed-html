@@ -1,12 +1,14 @@
 .chat-message {
     padding: 40px 15px;
     @media (min-width: 768px) {
+        height: calc(100vh - 85px);
         padding: 50px;
     }
     @media (min-width: 992px) {
-        padding: 60px 90px;
+        padding: 60px 90px 30px;
     }
     .inner-main {
+        height: 100%;
         overflow: hidden;
         @media (min-width: 992px) {
             border-radius: 20px;
