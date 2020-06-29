@@ -115,12 +115,14 @@
             }
         }
         .search-top {
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
             background: #231f20;
+            border: 0 none;
             border-radius: 5px;
-            overflow: hidden;
+            color: #fff;
+            font: 16px/1 Arial, sans-serif;
+            height: 32px;
+            outline: 0 none;
+            width: 240px;
             .icon {
                 background: #231f20;
                 color: #4f4c4d;

@@ -8,7 +8,7 @@
         padding: 60px 90px 30px;
     }
     .inner-main {
-        height: 100%;
+        min-height: 100%;
         overflow: hidden;
         @media (min-width: 992px) {
             border-radius: 20px;
@@ -61,13 +61,15 @@
                         padding: 0 15px;
                     }
                     input[type="text"] {
-                        width: 240px;
-                        border: 0 none;
-                        height: 55px;
-                        border-radius: 5px;
                         background: #231f20;
-                        font: 22px/1 Arial, sans-serif;
-                        color: #4f4c4d;
+                        border: 0 none;
+                        border-radius: 5px;
+                        color: #fff;
+                        flex-grow: 1;
+                        font: 20px/1 Arial, sans-serif;
+                        height: 55px;
+                        outline: 0 none;
+                        width: 240px;
                         &::placeholder {
                             color: #4f4c4d;
                             opacity: 1;
