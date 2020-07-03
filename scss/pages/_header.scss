@@ -121,21 +121,23 @@
             color: #fff;
             font: 16px/1 Arial, sans-serif;
             height: 32px;
+            margin-right: 15px;
             outline: 0 none;
-            width: 240px;
             .icon {
                 background: #231f20;
                 color: #4f4c4d;
                 font-size: 14px;
+                padding: 0 5px 0 10px;
             }
             input[type="text"] {
-                width: 240px;
-                border: 0 none;
-                height: 32px;
-                border-radius: 5px;
                 background: #231f20;
+                border: 0 none;
+                border-radius: 5px;
+                color: #fff;
                 font: 18px/1 Arial, sans-serif;
-                color: #4f4c4d;
+                height: 32px;
+                outline: 0 none;
+                width: 240px;
                 &::placeholder {
                     color: #4f4c4d;
                     opacity: 1;
