@@ -1,142 +1,141 @@
-    .row-img {
-        padding: 10px 10px 5px;
-        @media (min-width: 768px) {
-            padding: 35px 35px 25px;
-        }
-        .feed-link {
-            display: flex;
-            align-items: center;
-            margin: 0 0 20px;
-            padding: 0;
-            list-style: none;
-            li {
-                padding: 10px;
-                @media (orientation: portrait) and (max-width: 767px) {
-                    width: 50%;
-                }
-                @media (orientation: landscape) {
-                    padding: 15px;
-                    width: auto
-                }
-                a {
-                    width: 100%;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #4d4d4f;
-                    border-radius: 25px;
-                    text-decoration: none;
-                    color: #cacaca;
-                    font-size: 90px;
-                    @media (orientation: landscape) {
-                        font-size: 100px;
-                        width: 190px;
-                    }
-                    &:before {
-                        content: "";
-                        display: block;
-                        padding-top: 100%;
-                    }
-                    &:hover {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-        &+.row-img {
-            padding-top: 0;
-        }
-        .text {
-            padding: 0px 15px;
-        }
-        .head {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-        }
+.row-img {
+    padding: 10px 10px 5px;
+    @media (min-width: 768px) {
+        padding: 35px 35px 25px;
     }
-    
-    .join {
+    .feed-link {
         display: flex;
         align-items: center;
-        .cross-icon {
-            margin: 0 15px;
-            color: #cecece;
-            font-size: 22px;
-            line-height: 1;
-        }
-    }
-    
-    .img-slider {
-        padding: 25px 0;
-        margin: 0 -10px;
-        @media (min-width: 768px) {
-            padding: 35px 15px;
-            margin: 0;
-        }
-        .item {
-            img {
-                overflow: hidden;
-                border-radius: 20px;
-                width: 100%;
-            }
-        }
-    }
-    
-    .view-more {
-        margin-top: 40px;
-    }
-    
-    .img-row {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        @media (min-width: 768px) {
-            padding: 25px;
-        }
-        .wrap-img {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1710px;
-        }
-        .img-box {
+        margin: 0 0 20px;
+        padding: 0;
+        list-style: none;
+        li {
             padding: 10px;
-            width: 100%;
-            @media (min-width: 768px) {
-                padding: 25px;
+            @media (orientation: portrait) and (max-width: 767px) {
                 width: 50%;
             }
-            @media (min-width: 992px) {
-                width: 33.3333%;
+            @media (orientation: landscape) {
+                padding: 15px;
+                width: auto
             }
-            .head {
-                align-items: center;
+            a {
+                width: 100%;
+                position: relative;
                 display: flex;
-                margin: 0 0 20px 0;
-                .user {
-                    height: 70px;
-                    width: 70px;
-                    background: #fff;
-                    margin-right: 20px;
-                    border-radius: 50%;
-                    overflow: hidden;
-                }
-                h3 {
-                    color: #fff;
-                    font-weight: 600;
-                    .time {
-                        font-size: 16px;
-                        color: #cecece;
-                    }
-                }
-                h5 {
-                    margin: 0;
-                }
-            }
-            .img-holder {
+                align-items: center;
+                justify-content: center;
+                background: $lightgray;
                 border-radius: 25px;
-                overflow: hidden;
+                text-decoration: none;
+                color: $textcolor;
+                font-size: 90px;
+                @media (orientation: landscape) {
+                    font-size: 100px;
+                    width: 190px;
+                }
+                &:before {
+                    content: "";
+                    display: block;
+                    padding-top: 100%;
+                }
+                &:hover {
+                    color: $white;
+                }
             }
         }
     }
+    &+.row-img {
+        padding-top: 0;
+    }
+    .text {
+        padding: 0px 15px;
+    }
+    .head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    .cross-icon {
+        margin: 0 15px;
+        color: $textcolor;
+        font-size: 22px;
+        line-height: 1;
+    }
+}
+
+.img-slider {
+    padding: 25px 0;
+    margin: 0 -10px;
+    @media (min-width: 768px) {
+        padding: 35px 15px;
+        margin: 0;
+    }
+    .item {
+        img {
+            overflow: hidden;
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+}
+
+.view-more {
+    margin-top: 40px;
+}
+
+.img-row {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    @media (min-width: 768px) {
+        padding: 25px;
+    }
+    .wrap-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-box {
+        padding: 10px;
+        width: 100%;
+        @media (min-width: 768px) {
+            padding: 25px;
+            width: 50%;
+        }
+        @media (min-width: 992px) {
+            width: 33.3333%;
+        }
+        .head {
+            align-items: center;
+            display: flex;
+            margin: 0 0 20px 0;
+            .user {
+                height: 70px;
+                width: 70px;
+                background: $white;
+                margin-right: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            h3 {
+                color: $white;
+                font-weight: 600;
+                .time {
+                    font-size: 16px;
+                    color: $textcolor;
+                }
+            }
+            h5 {
+                margin: 0;
+            }
+        }
+        .img-holder {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+    }
+}

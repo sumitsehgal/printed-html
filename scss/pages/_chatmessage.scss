@@ -15,7 +15,7 @@
             display: flex;
         }
         .cm-box {
-            background: #333;
+            background: $lightgray;
             border-radius: 20px;
             @media (min-width: 992px) {
                 border-radius: 0;
@@ -24,10 +24,10 @@
                 display: flex;
                 padding: 30px 25px 25px;
                 justify-content: space-between;
-                border-bottom: 1px solid #5c5c5c;
+                border-bottom: 1px solid $bordercolor;
                 h2 {
-                    color: #fff;
-                    font: 600 22px Arial, sans-serif;
+                    color: $white;
+                    font: 600 22px $copy;
                     margin: 0;
                 }
             }
@@ -37,41 +37,41 @@
                     text-align: center;
                     padding: 50px 0;
                     h3 {
-                        color: #fff;
-                        font: 600 22px Arial, sans-serif;
+                        color: $white;
+                        font: 600 22px $copy;
                         margin-bottom: 15px;
                     }
                     p {
-                        color: #979797;
-                        font: 600 18px/2 Arial, sans-serif;
+                        color: $textcolor;
+                        font: 600 18px/2 $copy;
                         margin: 0;
                     }
                 }
                 .search-chat {
                     align-items: center;
-                    background: #231f20;
+                    background: $darkgray;
                     border-radius: 5px;
                     display: flex;
                     margin-bottom: 10px;
                     overflow: hidden;
                     .icon {
-                        background: #231f20;
-                        color: #4f4c4d;
+                        background: $darkgray;
+                        color: $icongray;
                         font-size: 32px;
                         padding: 0 15px;
                     }
                     input[type="text"] {
-                        background: #231f20;
+                        background: $darkgray;
                         border: 0 none;
                         border-radius: 5px;
-                        color: #fff;
+                        color: $white;
                         flex-grow: 1;
-                        font: 20px/1 Arial, sans-serif;
+                        font: 20px/1 $copy;
                         height: 55px;
                         outline: 0 none;
                         width: 240px;
                         &::placeholder {
-                            color: #4f4c4d;
+                            color: $icongray;
                             opacity: 1;
                         }
                     }
@@ -84,12 +84,12 @@
                     li {
                         margin: 0 20px 0 0;
                         a {
-                            color: #9a9a9a;
-                            font: 600 16px Arial, sans-serif;
+                            color: $textcolor;
+                            font: 600 16px $copy;
                             text-decoration: none;
                         }
                         &.active a {
-                            color: #fff;
+                            color: $white;
                         }
                     }
                 }
@@ -100,17 +100,17 @@
                     .user {
                         height: 70px;
                         width: 70px;
-                        background: #fff;
+                        background: $white;
                         margin-right: 20px;
                         border-radius: 50%;
                         overflow: hidden;
                     }
                     h3 {
-                        color: #fff;
+                        color: $white;
                         font-weight: 600;
                         .time {
                             font-size: 16px;
-                            color: #cecece;
+                            color: $textcolor;
                         }
                     }
                     h5 {
@@ -122,7 +122,7 @@
                 @media (min-width: 992px) {
                     width: 40%;
                     flex: 0 0 40%;
-                    border-right: 1px solid #5c5c5c;
+                    border-right: 1px solid $bordercolor;
                 }
             }
             &.chat-box {

@@ -1,13 +1,13 @@
 .cta {
-    background: #00aeef;
+    background: $blue;
     border-radius: 5px;
-    color: #fff;
+    color: $white;
     display: inline-block;
-    font: 16px/32px Arial, sans-serif;
+    font: 16px/32px $copy;
     padding: 0 25px;
     vertical-align: top;
     &:hover {
-        color: #fff;
+        color: $white;
         text-decoration: none;
     }
 }

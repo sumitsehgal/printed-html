@@ -1,39 +1,39 @@
 h2 {
-    font: 32px Arial, sans-serif;
+    font: 32px $copy;
     margin-bottom: 10px;
     &.wht {
-        color: #fff;
+        color: $white;
     }
 }
 
 h3 {
-    font: 20px Arial, sans-serif;
+    font: 20px $copy;
     margin-bottom: 10px;
     strong {
         font-weight: 600;
     }
     &.wht {
-        color: #fff;
+        color: $white;
     }
 }
 
 h4 {
-    font: 14px Arial, sans-serif;
+    font: 14px $copy;
     margin-bottom: 10px;
     strong {
         font-weight: 600;
     }
     &.wht {
-        color: #fff;
+        color: $white;
     }
 }
 
 h5 {
-    font: 16px Arial, sans-serif;
+    font: 16px $copy;
     strong {
         font-weight: 600;
     }
     &.wht {
-        color: #fff;
+        color: $white;
     }
 }

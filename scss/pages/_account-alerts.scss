@@ -6,23 +6,23 @@
             margin: 0 0 50px 0;
             .opt {
                 h3 {
-                    color: #ffffff;
-                    font: 16px Arial, sans-serif;
+                    color: $white;
+                    font: 16px $copy;
                     @media (min-width: 480px) {
-                        font: 20px Arial, sans-serif;
+                        font: 20px $copy;
                     }
                 }
                 h4 {
-                    font: 18px Arial, sans-serif;
-                    color: #d1d3d4;
+                    font: 18px $copy;
+                    color: $textcolor;
                     margin: 0px;
                     @media (min-width: 480px) {
-                        font: 22px Arial, sans-serif;
+                        font: 22px $copy;
                     }
                 }
                 p {
-                    font: 14px Arial, sans-serif;
-                    color: #d1d3d4;
+                    font: 14px $copy;
+                    color: $textcolor;
                     margin: 0px;
                 }
                 .switch {

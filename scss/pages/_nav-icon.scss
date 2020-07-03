@@ -1,7 +1,7 @@
 $wide: 20px;
 $pos:8px;
 %bar {
-    background: #cecece;
+    background: $textcolor;
     content: '';
     display: block;
     height: 3px;

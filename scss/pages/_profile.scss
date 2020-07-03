@@ -16,11 +16,11 @@
                 margin-bottom: 15px;
                 a {
                     align-items: center;
-                    background: #333;
+                    background: $lightgray;
                     border-radius: 10px;
-                    color: #fff;
+                    color: $white;
                     display: flex;
-                    font: 22px/1 Arial, sans-serif;
+                    font: 22px/1 $copy;
                     height: 64px;
                     padding: 0 20px;
                     text-decoration: none;
@@ -30,7 +30,7 @@
                 }
                 &.active {
                     a {
-                        background: #186e9b;
+                        background: $blue;
                     }
                 }
                 &:last-child {
@@ -42,7 +42,7 @@
         }
     }
     .form-box {
-        background: #333;
+        background: $lightgray;
         border-radius: 15px;
         margin-bottom: 60px;
         padding: 20px;
@@ -52,7 +52,7 @@
         .user-pic {
             .user {
                 border-radius: 50%;
-                background: #fff;
+                background: $white;
                 height: 125px;
                 margin: 0 auto;
                 overflow: hidden;
@@ -62,7 +62,7 @@
                 margin-bottom: 20px;
                 margin-top: 20px;
                 a {
-                    font: 22px/1.4 Arial, sans-serif;
+                    font: 22px/1.4 $copy;
                     padding: 10px 20px;
                     min-width: 175px;
                 }
@@ -71,55 +71,55 @@
         .required {
             margin-top: 30px;
             text-align: right;
-            color: #d1d3d4;
-            font: 16px Arial, sans-serif;
+            color: $textcolor;
+            font: 16px $copy;
             margin-bottom: 15px;
         }
         .input-form {
             margin: 0 0 25px 0;
             label {
-                color: #d1d3d4;
-                font: 16px Arial, sans-serif;
+                color: $textcolor;
+                font: 16px $copy;
                 margin: 0 0 8px 8px;
             }
             input[type="text"],
             input[type="email"],
             input[type="password"] {
                 width: 100%;
-                background: #231f20;
+                background: $darkgray;
                 height: 60px;
                 border-radius: 10px;
                 border: 0 none;
-                color: #fff;
-                font: 20px Arial, sans-serif;
+                color: $white;
+                font: 20px $copy;
                 padding: 0 20px;
                 &:focus {
                     outline: 0 none;
                 }
                 &::placeholder {
-                    color: #fff;
+                    color: $white;
                     opacity: 1;
                 }
             }
             textarea {
                 width: 100%;
-                background: #231f20;
+                background: $darkgray;
                 border-radius: 10px;
                 border: 0 none;
-                color: #fff;
-                font: 20px Arial, sans-serif;
+                color: $white;
+                font: 20px $copy;
                 padding: 10px 20px;
                 &:focus {
                     outline: 0 none;
                 }
                 &::placeholder {
-                    color: #fff;
+                    color: $white;
                     opacity: 1;
                 }
             }
             .number {
                 align-items: center;
-                background: #231f20;
+                background: $darkgray;
                 border-radius: 10px;
                 display: flex;
                 .map {
@@ -151,7 +151,7 @@
                 margin-top: 10px;
                 .radio-input {
                     cursor: pointer;
-                    font: 22px/30px Arial, sans-serif;
+                    font: 22px/30px $copy;
                     margin: 0 30px 0 0;
                     padding-left: 40px;
                     position: relative;
@@ -175,15 +175,15 @@
                         opacity: 0;
                         cursor: pointer;
                         &:checked~.checkmark {
-                            background-color: #00aeef;
-                            border: 2px solid #fff;
+                            background-color: $blue;
+                            border: 2px solid $white;
                         }
                     }
                 }
             }
             .tagsin {
                 align-items: center;
-                background: #231f20;
+                background: $darkgray;
                 border-radius: 10px;
                 display: flex;
                 padding: 0px 10px;
@@ -196,7 +196,7 @@
                     padding: 0px 10px;
                     width: 50px;
                     i {
-                        color: #fff;
+                        color: $white;
                         font-size: 20px;
                         margin: 0px;
                     }
@@ -208,10 +208,10 @@
                     justify-content: center;
                     flex: 0 0 50px;
                     border-radius: 5px;
-                    background-color: #00aeef;
+                    background-color: $blue;
                     width: 50px;
                     height: 50px;
-                    color: #fff;
+                    color: $white;
                     img {
                         max-width: 100%;
                         cursor: pointer;
@@ -224,7 +224,7 @@
             }
             .multi-field {
                 align-items: center;
-                background: #231f20;
+                background: $darkgray;
                 border-radius: 10px;
                 display: flex;
                 padding: 0px 10px;
@@ -237,8 +237,8 @@
                     align-items: center;
                     justify-content: center;
                     p {
-                        color: #fff;
-                        font: 20px Arial, sans-serif;
+                        color: $white;
+                        font: 20px $copy;
                         margin: 0px;
                     }
                 }
@@ -249,13 +249,13 @@
                     justify-content: center;
                     flex: 0 0 96px;
                     border-radius: 5px;
-                    background-color: #00aeef;
+                    background-color: $blue;
                     width: 96px;
                     height: 50px;
-                    color: #fff;
+                    color: $white;
                     a {
-                        font: 22px Arial, sans-serif;
-                        color: #ffffff;
+                        font: 22px $copy;
+                        color: $white;
                         text-decoration: none;
                     }
                 }
@@ -266,7 +266,7 @@
             }
             .skills-box {
                 align-items: center;
-                background: #231f20;
+                background: $darkgray;
                 border-radius: 10px;
                 display: flex;
                 padding: 0px 10px;
@@ -279,7 +279,7 @@
                         @extend %switch;
                         .slider {
                             &:before {
-                                background: #333;
+                                background: $lightgray;
                             }
                         }
                     }
@@ -288,7 +288,7 @@
             .view-more {
                 button {
                     &.cta {
-                        font: 22px/1.4 Arial, sans-serif;
+                        font: 22px/1.4 $copy;
                         padding: 10px 20px;
                         min-width: 175px;
                         border: none;
@@ -301,8 +301,8 @@
         .account-link {
             margin-top: 45px;
             p {
-                color: #d1d3d4;
-                font: 18px Arial, sans-serif;
+                color: $textcolor;
+                font: 18px $copy;
                 padding: 0 10px;
             }
             img {
@@ -315,15 +315,15 @@
                 padding: 0 10px;
             }
             p {
-                color: #fbfcfd;
-                font: 18px/1.5 Arial, sans-serif;
+                color: $textcolor;
+                font: 18px/1.5 $copy;
             }
             a {
-                font: 18px/1.5 Arial, sans-serif;
-                color: #186e9b;
+                font: 18px/1.5 $copy;
+                color: $blue;
                 text-align: center;
                 border-radius: 5px;
-                border: 4px solid #186e9b;
+                border: 4px solid $blue;
                 width: 100%;
                 height: 50px;
                 display: flex;
@@ -333,7 +333,7 @@
                 margin: 30px 0 0;
                 @media (min-width: 1100px) {
                     width: 262px;
-                    font: 22px/1.5 Arial, sans-serif;
+                    font: 22px/1.5 $copy;
                 }
             }
         }

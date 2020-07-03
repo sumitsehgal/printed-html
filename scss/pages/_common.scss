@@ -1,10 +1,10 @@
 body {
-    background: #231f20;
-    color: #cecece;
+    background: $darkgray;
+    color: $textcolor;
 }
 
 hr.bar {
-    border-color: #4f4f4f;
+    border-color: $lightgray;
     margin-bottom: 0;
     margin-top: 0;
     width: calc(100% - 40px);
@@ -14,9 +14,9 @@ hr.bar {
 }
 
 .bg-gray {
-    background-color: #333;
+    background-color: $lightgray;
 }
 
 .bg-body {
-    background: #231f20;
+    background: $darkgray;
 }

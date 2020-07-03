@@ -25,18 +25,18 @@
         padding: 0;
         position: relative;
         li {
-            font: 18px Arial, sans-serif;
+            font: 18px $copy;
             padding: 20px 15px;
             position: relative;
             a {
-                color: #cacaca;
+                color: $textcolor;
                 &:hover {
-                    color: #fff;
+                    color: $white;
                     text-decoration: none;
                 }
             }
             &.icon {
-                color: #fff;
+                color: $white;
                 font-size: 16px;
                 left: -40px;
                 position: absolute;
@@ -44,8 +44,8 @@
             &.active {
                 padding-bottom: 0;
                 a {
-                    color: #fff;
-                    border-bottom: 2px solid #fff;
+                    color: $white;
+                    border-bottom: 2px solid $white;
                     padding-bottom: 20px;
                 }
             }
@@ -56,8 +56,8 @@
 .profile-gallery {
     padding: 0 40px 40px;
     .title {
-        color: rgba(#fff, 0.2);
-        font: 18px/1.15 Arial, sans-serif;
+        color: rgba($white, 0.2);
+        font: 18px/1.15 $copy;
         margin: 0;
         padding: 15px 25px;
     }
@@ -68,10 +68,10 @@
             flex-grow: 1;
             h2 {
                 font-size: 22px;
-                color: #fff;
+                color: $white;
                 white-space: nowrap;
                 .time {
-                    color: #cecece;
+                    color: $textcolor;
                     font-size: 16px;
                     margin: 0 0 0 10px;
                 }
@@ -91,7 +91,7 @@
                     width: 75px;
                     border-radius: 50%;
                     overflow: hidden;
-                    border: 1px solid #231f20;
+                    border: 1px solid $darkgray;
                     margin-left: -40px;
                 }
             }
@@ -103,12 +103,12 @@
         border-radius: 35px;
     }
     &:nth-child(2n) {
-        background: #333;
+        background: $lightgray;
         .info {
             .img-option {
                 ul {
                     li {
-                        border-color: #333;
+                        border-color: $lightgray;
                     }
                 }
             }

@@ -14,7 +14,7 @@
 
 .header {
     align-items: center;
-    background: #333;
+    background: $lightgray;
     display: flex;
     justify-content: space-between;
     min-height: 85px;
@@ -51,30 +51,30 @@
             li {
                 margin-right: 5px;
                 a {
-                    background: #231f20;
-                    color: #cacaca;
+                    background: $darkgray;
+                    color: $textcolor;
                     text-decoration: none;
                     padding: 5px 10px;
-                    font: 20px/1 Arial, sans-serif;
+                    font: 20px/1 $copy;
                     display: block;
                     border-radius: 4px;
                     min-height: 32px;
                     &:hover {
-                        color: #fff;
+                        color: $white;
                     }
                     &.icon {
                         @extend %icon;
                         &.open {
-                            color: #ffffff;
+                            color: $white;
                         }
                     }
                 }
                 &.active {
                     a {
-                        color: #fff;
+                        color: $white;
                         &.icon {
-                            background: #ffffff;
-                            color: #231f20;
+                            background: $white;
+                            color: $darkgray;
                         }
                     }
                 }
@@ -85,22 +85,22 @@
             &.link-button {
                 li {
                     a {
-                        background: #333;
+                        background: $lightgray;
                         border-radius: 5px;
-                        color: #fff;
+                        color: $white;
                         display: inline-block;
-                        font: 12px/32px Arial, sans-serif;
+                        font: 12px/32px $copy;
                         padding: 0 10px;
                         vertical-align: top;
                         text-decoration: none;
                         @media (min-width: 360px) {
-                            font: 14px/32px Arial, sans-serif;
+                            font: 14px/32px $copy;
                         }
                         @media (min-width: 480px) {
                             padding: 0 20px;
                         }
                         &:hover {
-                            background: #00aeef;
+                            background: $blue;
                         }
                     }
                 }
@@ -115,31 +115,31 @@
             }
         }
         .search-top {
-            background: #231f20;
+            background: $darkgray;
             border: 0 none;
             border-radius: 5px;
-            color: #fff;
-            font: 16px/1 Arial, sans-serif;
+            color: $white;
+            font: 16px/1 $copy;
             height: 32px;
             margin-right: 15px;
             outline: 0 none;
             .icon {
-                background: #231f20;
-                color: #4f4c4d;
+                background: $darkgray;
+                color: $icongray;
                 font-size: 14px;
                 padding: 0 5px 0 10px;
             }
             input[type="text"] {
-                background: #231f20;
+                background: $darkgray;
                 border: 0 none;
                 border-radius: 5px;
-                color: #fff;
-                font: 18px/1 Arial, sans-serif;
+                color: $white;
+                font: 18px/1 $copy;
                 height: 32px;
                 outline: 0 none;
                 width: 240px;
                 &::placeholder {
-                    color: #4f4c4d;
+                    color: $icongray;
                     opacity: 1;
                 }
             }
@@ -167,16 +167,16 @@
                     margin: 0 0 0 15px;
                 }
                 a {
-                    background: #00aeef;
+                    background: $blue;
                     border-radius: 5px;
-                    color: #fff;
+                    color: $white;
                     display: inline-block;
-                    font: 12px/32px Arial, sans-serif;
+                    font: 12px/32px $copy;
                     padding: 0 10px;
                     vertical-align: top;
                     text-decoration: none;
                     @media (min-width: 376px) {
-                        font: 14px/32px Arial, sans-serif;
+                        font: 14px/32px $copy;
                     }
                     @media (min-width: 480px) {
                         padding: 0 20px;
@@ -191,9 +191,9 @@
             top: 100%;
             z-index: 100;
             width: 100%;
-            background: #333;
+            background: $lightgray;
             padding: 20px;
-            border-top: 1px solid #231f20;
+            border-top: 1px solid $darkgray;
             &.open {
                 display: block;
             }
@@ -220,7 +220,7 @@
             right: 0;
             display: none;
             border-radius: 10px;
-            background: #231f20;
+            background: $darkgray;
             width: 150px;
             box-shadow: 0 12px 10px 0 rgba(55, 55, 55, 1);
             ul {
@@ -231,13 +231,13 @@
                     width: 100%;
                     padding: 5px;
                     a {
-                        color: #cacaca;
-                        font: 600 14px Arial, sans-serif;
+                        color: $textcolor;
+                        font: 600 14px $copy;
                         padding: 0px;
                         min-height: auto;
                         width: 100%;
                         &:hover {
-                            color: #fff;
+                            color: $white;
                         }
                     }
                 }
@@ -263,20 +263,20 @@
             a {
                 padding: 16px 0;
                 display: block;
-                font: 600 14px Arial, sans-serif;
-                color: #7f7f7f;
+                font: 600 14px $copy;
+                color: $textcolor;
                 text-decoration: none;
                 border-bottom: 2px solid transparent;
                 border-top: 2px solid transparent;
                 text-transform: uppercase;
                 &:hover {
-                    color: #fff;
+                    color: $white;
                 }
             }
             &.active {
                 a {
-                    color: #fff;
-                    border-bottom: 2px solid #fff;
+                    color: $white;
+                    border-bottom: 2px solid $white;
                 }
             }
         }
@@ -292,8 +292,8 @@
             padding: 20px 0;
             margin: 0 20px 0 0;
             border-top: 2px solid transparent;
-            border-bottom: 2px solid #fff;
-            font: 600 18px Arial, sans-serif;
+            border-bottom: 2px solid $white;
+            font: 600 18px $copy;
         }
         .link-icon {
             display: flex;
@@ -308,9 +308,9 @@
                     margin: 0 20px;
                 }
                 a {
-                    color: #727272;
+                    color: $textcolor;
                     &:hover {
-                        color: #fff;
+                        color: $white;
                     }
                 }
             }
@@ -329,27 +329,27 @@
                     margin: 0 20px;
                 }
                 a {
-                    font: 600 18px Arial, sans-serif;
-                    color: #fff;
+                    font: 600 18px $copy;
+                    color: $white;
                     &:hover {
                         text-decoration: none;
                     }
                 }
                 &.active {
-                    border-bottom: 2px solid #fff;
+                    border-bottom: 2px solid $white;
                 }
             }
         }
         .updated {
-            color: #cecece;
-            font: 600 14px Arial, sans-serif;
+            color: $textcolor;
+            font: 600 14px $copy;
             margin-right: 30px;
         }
         .from {
             padding: 20px 0;
             border-top: 2px solid transparent;
-            border-bottom: 2px solid #fff;
-            font: 600 18px Arial, sans-serif;
+            border-bottom: 2px solid $white;
+            font: 600 18px $copy;
         }
     }
 }
@@ -357,7 +357,7 @@
 .noti-box {
     position: absolute;
     right: 20px;
-    background: #231f20;
+    background: $darkgray;
     top: calc(100% + 20px);
     max-width: 372px;
     width: 3752px;
@@ -369,18 +369,18 @@
         align-items: center;
         justify-content: space-between;
         padding: 20px 25px 15px;
-        background: #333;
-        border-bottom: 1px solid #5c5c5c;
+        background: $lightgray;
+        border-bottom: 1px solid $bordercolor;
         h2 {
             margin: 0;
-            color: #fff;
-            font: 600 14px Arial, sans-serif;
+            color: $white;
+            font: 600 14px $copy;
         }
         .activity {
-            background: #231f20;
+            background: $darkgray;
             border-radius: 5px;
-            color: #fff;
-            font: 600 12px/1 Arial, sans-serif;
+            color: $white;
+            font: 600 12px/1 $copy;
             padding: 7px 15px 6px;
             border-radius: 4px;
             text-decoration: none;
@@ -394,16 +394,16 @@
             align-items: center;
             justify-content: center;
             padding: 45px 0;
-            color: #fff;
-            font: 600 14px Arial, sans-serif;
+            color: $white;
+            font: 600 14px $copy;
         }
         .see-all-noti {
             position: absolute;
             left: 50%;
             bottom: 20px;
             transform: translateX(-50%);
-            color: #fff;
-            font: 600 14px Arial, sans-serif;
+            color: $white;
+            font: 600 14px $copy;
             text-decoration: none;
         }
     }
